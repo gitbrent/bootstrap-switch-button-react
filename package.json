@@ -1,13 +1,12 @@
 {
   "name": "bootstrap-switch-button-react",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0-beta.4",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/gitbrent/bootstrap-switch-button-react.git"
   },
   "main": "./lib/bootstrap-switch-button.tsx",
-  "types": "./lib/bootstrap-switch-button.d.ts",
   "devDependencies": {
     "@types/react": "^16.8.1",
     "react": "16.7.0",
