@@ -1,7 +1,7 @@
 /*\
 |*|  :: Bootstrap Switch Button ::
 |*|
-|*|  Dream Journal App - Record and Search Daily Dream Entries
+|*|  Bootstrap Switch Button (React)
 |*|  https://github.com/gitbrent/bootstrap-switch-button-react
 |*|
 |*|  This library is released under the MIT Public License (MIT)

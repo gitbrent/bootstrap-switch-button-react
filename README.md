@@ -7,8 +7,8 @@ Checkbox replacement using stylish bootstrap-4 switch button.
 Lightweight, pure JavaScript, no dependencies.
 
 ## Installation
-```bash
-npm i bootstrap-switch-button-react --savedev
+```sh
+npm i bootstrap-switch-button-react --save
 ```
 
 ## Demo
@@ -16,12 +16,12 @@ npm i bootstrap-switch-button-react --savedev
 import BootstrapSwitchButton from 'bootstrap-switch-button-react'
 
 <BootstrapSwitchButton
-	checked={false}
-	onlabel='Admin User'
-	offlabel='Normal User'
-	onChange={(checked: boolean) => {
-		this.setState({ isUserAdmin: checked })
-	}}
+    checked={false}
+    onlabel='Admin User'
+    offlabel='Normal User'
+    onChange={(checked: boolean) => {
+        this.setState({ isUserAdmin: checked })
+    }}
 />
 ```
 
