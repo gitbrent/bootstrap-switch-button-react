@@ -1,15 +1,35 @@
 {
   "name": "bootstrap-switch-button-react",
-  "version": "1.0.0-beta.4",
+  "version": "1.0.0-beta.6",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/gitbrent/bootstrap-switch-button-react.git"
   },
-  "main": "./lib/bootstrap-switch-button.tsx",
+  "main": "./lib/bootstrap-switch-button.js",
+  "peerDependencies": {
+    "react": "^16.4.0"
+  },
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "css-loader": "^2.1.1",
+    "react": "^16.7.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.12.0"
+  },
   "devDependencies": {
-    "@types/react": "^16.8.1",
-    "react": "16.7.0",
-    "typescript": "3.3.1"
+    "@types/react": "^16.8.10",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "webpack-cli": "^3.3.0"
   }
 }
