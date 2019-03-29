@@ -1,17 +1,17 @@
 var path = require("path");
 module.exports = {
-  entry: "./lib/bootstrap-switch-button.js",
+  entry: "./src/bootstrap-switch-button.js",
   output: {
-    path: path.resolve(__dirname, "build"),
-    filename: "index.js",
+    path: path.resolve(__dirname, "lib"),
+    filename: "bootstrap-switch-button.js",
     libraryTarget: "commonjs2"
   },
   module: {
     rules: [
       {
         test: /\.js$/,
-        include: path.resolve(__dirname, "lib"),
-        exclude: /(node_modules|bower_components|build)/,
+        include: path.resolve(__dirname, "src"),
+        exclude: /(node_modules|bower_components|lib|build)/,
         use: {
           loader: "babel-loader",
           options: {
