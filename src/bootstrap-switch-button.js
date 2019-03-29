@@ -34,8 +34,6 @@ export default class BootstrapSwitchButton extends React.Component {
   constructor(props) {
     super(props);
 
-    this.props.onChange = this.props.onChange.bind(this);
-
     this.state = {
       checked: this.props.checked || true,
       disabled: this.props.disabled || false,
