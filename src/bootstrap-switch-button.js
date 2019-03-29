@@ -6,7 +6,7 @@
 |*|
 |*|  This library is released under the MIT Public License (MIT)
 |*|
-|*|  Dream Journal App (C) 2019-present Brent Ely (https://github.com/gitbrent)
+|*|  Bootstrap Switch Button (C) 2019-present Brent Ely (https://github.com/gitbrent)
 |*|
 |*|  Permission is hereby granted, free of charge, to any person obtaining a copy
 |*|  of this software and associated documentation files (the "Software"), to deal
@@ -35,8 +35,8 @@ export default class BootstrapSwitchButton extends React.Component {
     super(props);
 
     this.state = {
-      checked: this.props.checked || true,
-      disabled: this.props.disabled || false,
+      checked: typeof this.props.checked === 'boolean' ? this.props.checked : true,
+      disabled: typeof this.props.disabled === 'boolean' ? this.props.disabled : false,
       onlabel: this.props.onlabel || "On",
       onstyle: this.props.onstyle || "primary",
       offlabel: this.props.offlabel || "Off",
@@ -49,15 +49,14 @@ export default class BootstrapSwitchButton extends React.Component {
   }
 
   toggle = event => {
-    if (this.state.checked) this.off();
-    else this.on();
+    this.state.checked ? this.off() : this.on();
   };
   off = () => {
     if (!this.state.disabled) {
       this.setState({
         checked: false
       });
-      if (this.props.onChange) this.props.onChange(this.state.checked);
+      if (this.props.onChange) this.props.onChange(false);
     }
   };
   on = () => {
@@ -65,13 +64,13 @@ export default class BootstrapSwitchButton extends React.Component {
       this.setState({
         checked: true
       });
-      /*
-			this.state.classList.remove( 'btn-'+this.options.offstyle );
-			this.state.classList.add( 'btn-'+this.options.onstyle );
-			this.state.classList.remove( 'off' );
-			this.state.checked = true
-			*/
-      if (this.props.onChange) this.props.onChange(this.state.checked);
+	  /*
+		this.state.classList.remove( 'btn-'+this.options.offstyle );
+		this.state.classList.add( 'btn-'+this.options.onstyle );
+		this.state.classList.remove( 'off' );
+		this.state.checked = true
+		*/
+      if (this.props.onChange) this.props.onChange(true);
     }
   };
   enable = () => {
