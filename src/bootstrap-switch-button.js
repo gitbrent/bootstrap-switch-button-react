@@ -35,8 +35,10 @@ export default class BootstrapSwitchButton extends React.Component {
     super(props);
 
     this.state = {
-      checked: typeof this.props.checked === 'boolean' ? this.props.checked : true,
-      disabled: typeof this.props.disabled === 'boolean' ? this.props.disabled : false,
+      checked:
+        typeof this.props.checked === "boolean" ? this.props.checked : true,
+      disabled:
+        typeof this.props.disabled === "boolean" ? this.props.disabled : false,
       onlabel: this.props.onlabel || "On",
       onstyle: this.props.onstyle || "primary",
       offlabel: this.props.offlabel || "Off",
@@ -64,12 +66,6 @@ export default class BootstrapSwitchButton extends React.Component {
       this.setState({
         checked: true
       });
-	  /*
-		this.state.classList.remove( 'btn-'+this.options.offstyle );
-		this.state.classList.add( 'btn-'+this.options.onstyle );
-		this.state.classList.remove( 'off' );
-		this.state.checked = true
-		*/
       if (this.props.onChange) this.props.onChange(true);
     }
   };
@@ -92,6 +88,7 @@ export default class BootstrapSwitchButton extends React.Component {
     const paddingTop = parseFloat(styles.paddingTop);
     const paddingBottom = parseFloat(styles.paddingBottom);
 
+    // TODO: needed for React?? 20190329 - create a demo page to test sizes like core project
     //return height - borderBottomWidth - borderTopWidth - paddingTop - paddingBottom
     // TODO: set new state, then have button use height style on re-render?
   };
@@ -114,7 +111,6 @@ export default class BootstrapSwitchButton extends React.Component {
         }
         style={style}
         onClick={this.toggle}
-        onTouchStart={this.toggle}
       >
         <div className="switch-group">
           <label
