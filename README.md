@@ -1,4 +1,4 @@
-[![MIT License](https://img.shields.io/github/license/gitbrent/bootstrap-switch-button-react.svg)](https://github.com/gitbrent/bootstrap-switch-button-react/blob/master/LICENSE)
+[![MIT License](https://img.shields.io/github/license/gitbrent/bootstrap-switch-button-react.svg)](https://github.com/gitbrent/bootstrap-switch-button-react/blob/master/LICENSE)  [![Dependency Status](https://david-dm.org/gitbrent/bootstrap-switch-button-react/status.svg)](https://david-dm.org/gitbrent/bootstrap-switch-button-react)  [![Known Vulnerabilities](https://snyk.io/test/npm/bootstrap-switch-button-react/badge.svg)](https://snyk.io/test/npm/bootstrap-switch-button-react)  [![npm downloads](https://img.shields.io/npm/dm/bootstrap-switch-button-react.svg)](https://www.npmjs.com/package/bootstrap-switch-button-react)
 
 # Bootstrap Switch Button for React
 
@@ -6,12 +6,10 @@ Checkbox replacement using stylish bootstrap-4 switch button.
 
 Lightweight, no dependencies, easy webpack integration.
 
-## Installation
-```sh
-npm i bootstrap-switch-button-react --save-dev
-```
-
 ## Demo
+
+![Demo](https://github.com/gitbrent/bootstrap-switch-button-react/blob/master/img/demo.gif?raw=true)
+
 ```typescript
 import BootstrapSwitchButton from 'bootstrap-switch-button-react'
 
@@ -25,10 +23,12 @@ import BootstrapSwitchButton from 'bootstrap-switch-button-react'
 />
 ```
 
-![Demo](https://github.com/gitbrent/bootstrap-switch-button-react/blob/master/img/demo.gif?raw=true)
+## Installation
+```bash
+npm i bootstrap-switch-button-react --save-dev
+```
 
 ## Properties
-
 Name       |Type        |Default   |Description                 |
 -----------|------------|----------|----------------------------|
 `onlabel`  |string/html |"On"      |Text of the on switch-button
