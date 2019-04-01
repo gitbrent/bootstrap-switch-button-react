@@ -1,0 +1,5 @@
+TODO:
+* demo page (how do we create a React/webpack separate from our src->lib build?) use webpack under /src ?
+* this will show whether we need to do the crazy `height` adjustment
+* Add d.ts typescript def file
+* Improve README like react-datepicker (banner with demo gif and links)
