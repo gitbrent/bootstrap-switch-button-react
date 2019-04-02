@@ -1,10 +1,10 @@
 var path = require("path");
 module.exports = {
   mode: "production",
-  entry: "./src/bootstrap-switch-button.js",
+  entry: "./src/bootstrap-switch-button-react.js",
   output: {
     path: path.resolve(__dirname, "lib"),
-    filename: "bootstrap-switch-button.js",
+    filename: "bootstrap-switch-button-react.js",
     libraryTarget: "commonjs2"
   },
   module: {

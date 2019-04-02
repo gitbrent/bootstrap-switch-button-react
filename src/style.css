@@ -114,23 +114,22 @@
 }
 
 /* NOTE: Must come first, so classes below override as needed */
-/* [default] (bootstrap-4.1.3 - .btn - h:38px) */
-.switch.btn { min-width: 3.7rem; min-height: 2.15rem; }
+/* bootstrap-4.x .form-control {height} values used as `min-height` to mirror output sizes */
+
+.switch.btn { min-width: 3.7rem; min-height: calc(1.5em + .75rem + 2px); }
 .switch-on.btn { padding-right: 1.5rem; }
 .switch-off.btn { padding-left: 1.5rem; }
 
-/* `lg` (bootstrap-4.1.3 - .btn - h:48px) */
-.switch.btn-lg { min-width: 5rem; min-height: 2.815rem; }
+.switch.btn-lg { min-width: 5rem; line-height: 1.5; min-height: calc(1.5em + 1rem + 2px); }
 .switch-on.btn-lg { padding-right: 2rem; }
 .switch-off.btn-lg { padding-left: 2rem; }
 .switch-handle.btn-lg { width: 2.5rem; }
 
-/* `sm` (bootstrap-4.1.3 - .btn - h:31px) */
-.switch.btn-sm { min-width: 3.125rem; min-height: 1.938rem; }
+.switch.btn-sm { min-width: 3.25rem; min-height: calc(1.5em + .5rem + 2px); }
 .switch-on.btn-sm { padding-right: 1rem; }
 .switch-off.btn-sm { padding-left: 1rem; }
 
 /* `xs` (bootstrap-3.3 - .btn - h:22px) */
-.switch.btn-xs { min-width: 2.19rem; min-height: 1.375rem; }
+.switch.btn-xs { min-width: 3.125rem; min-height: 1.375rem; }
 .switch-on.btn-xs { padding-right: .8rem; }
 .switch-off.btn-xs { padding-left: .8rem; }

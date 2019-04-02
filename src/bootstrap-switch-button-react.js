@@ -80,24 +80,13 @@ export default class BootstrapSwitchButton extends React.Component {
     });
   };
 
-  calcH = el => {
-    const styles = window.getComputedStyle(el);
-    const height = el.offsetHeight;
-    const borderTopWidth = parseFloat(styles.borderTopWidth);
-    const borderBottomWidth = parseFloat(styles.borderBottomWidth);
-    const paddingTop = parseFloat(styles.paddingTop);
-    const paddingBottom = parseFloat(styles.paddingBottom);
-
-    // TODO: needed for React?? 20190329 - create a demo page to test sizes like core project
-    //return height - borderBottomWidth - borderTopWidth - paddingTop - paddingBottom
-    // TODO: set new state, then have button use height style on re-render?
-  };
-
-  // style={{ width: '81.875px', height: '48px' }}>
   render = () => {
-    let style = {};
-    this.props.width ? (style["width"] = this.props.width + "px") : null;
-    this.props.height ? (style["height"] = this.props.height + "px") : null;
+    let switchStyle = {};
+    this.state.width ? (switchStyle.width = this.state.width + "px") : null;
+    this.state.height ? (switchStyle.height = this.state.height + "px") : null;
+
+    let labelStyle = {}
+	if ( this.state.height ) labelStyle.lineHeight = 'calc('+ this.state.height + 'px * 0.8)';
 
     return (
       <div
@@ -109,7 +98,7 @@ export default class BootstrapSwitchButton extends React.Component {
           (this.state.size ? " btn-" + this.state.size : "") +
           (this.state.style ? " " + this.state.style : "")
         }
-        style={style}
+        style={switchStyle}
         onClick={this.toggle}
       >
         <div className="switch-group">
@@ -119,6 +108,7 @@ export default class BootstrapSwitchButton extends React.Component {
               this.state.onstyle +
               (this.state.size ? " btn-" + this.state.size : "")
             }
+            style={labelStyle}
           >
             {this.state.onlabel}
           </label>
@@ -128,6 +118,7 @@ export default class BootstrapSwitchButton extends React.Component {
               this.state.offstyle +
               (this.state.size ? " btn-" + this.state.size : "")
             }
+			style={labelStyle}
           >
             {this.state.offlabel}
           </label>
@@ -141,11 +132,4 @@ export default class BootstrapSwitchButton extends React.Component {
       </div>
     );
   };
-
-  /* TODO:
-	if ( this.options.height ) {
-		switchOn.style.lineHeight = calcH(switchOn)+'px';
-		switchOff.style.lineHeight = calcH(switchOff)+'px';
-	}
-	*/
 }

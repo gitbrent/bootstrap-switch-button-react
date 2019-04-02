@@ -1,17 +1,17 @@
 {
-  "name": "bootstrap-switch-button-react",
+  "name": "bootstrap-switch-button-react-test",
   "version": "1.0.0-beta.11",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/gitbrent/bootstrap-switch-button-react.git"
   },
-  "main": "./lib/bootstrap-switch-button-react.js",
   "peerDependencies": {
     "react": "^16.4.0"
   },
   "scripts": {
-    "start": "webpack --watch",
+    "start": "webpack-dev-server -d --content-base ./public",
+    "watch": "webpack --watch",
     "build": "webpack -p"
   },
   "dependencies": {
@@ -21,7 +21,8 @@
     "css-loader": "^2.1.1",
     "react": "^16.7.0",
     "style-loader": "^0.23.1",
-    "webpack": "^4.12.0"
+    "webpack": "^4.12.0",
+    "webpack-dev-server": "^3.2.1"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.4.0",
@@ -30,18 +31,11 @@
     "babel-loader": "^8.0.5",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
+    "clean-webpack-plugin": "^2.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "react-dom": "^16.8.6",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.4.1",
     "webpack-cli": "^3.3.0"
-  },
-  "keywords": [
-    "bootstrap",
-    "bootstrap-4",
-    "bootstrap-checkbox",
-    "bootstrap-react",
-    "bootstrap-switch-button",
-    "bootstrap-switch-button-react",
-    "react-bootstrap-switch-button"
-  ],
-  "bugs": {
-    "url": "https://github.com/gitbrent/bootstrap-switch-button-react/issues"
   }
 }
