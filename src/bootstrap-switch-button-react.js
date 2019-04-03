@@ -36,12 +36,12 @@ export default class BootstrapSwitchButton extends React.Component {
 
     this.state = {
       checked:
-        typeof this.props.checked === "boolean" ? this.props.checked : true,
+        typeof this.props.checked === "boolean" ? this.props.checked : false,
       disabled:
         typeof this.props.disabled === "boolean" ? this.props.disabled : false,
       onlabel: this.props.onlabel || "On",
-      onstyle: this.props.onstyle || "primary",
       offlabel: this.props.offlabel || "Off",
+      onstyle: this.props.onstyle || "primary",
       offstyle: this.props.offstyle || "light",
       size: this.props.size || "",
       style: this.props.style || "",
@@ -85,8 +85,9 @@ export default class BootstrapSwitchButton extends React.Component {
     this.state.width ? (switchStyle.width = this.state.width + "px") : null;
     this.state.height ? (switchStyle.height = this.state.height + "px") : null;
 
-    let labelStyle = {}
-	if ( this.state.height ) labelStyle.lineHeight = 'calc('+ this.state.height + 'px * 0.8)';
+    let labelStyle = {};
+    if (this.state.height)
+      labelStyle.lineHeight = "calc(" + this.state.height + "px * 0.8)";
 
     return (
       <div
@@ -118,7 +119,7 @@ export default class BootstrapSwitchButton extends React.Component {
               this.state.offstyle +
               (this.state.size ? " btn-" + this.state.size : "")
             }
-			style={labelStyle}
+            style={labelStyle}
           >
             {this.state.offlabel}
           </label>
