@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import BootstrapSwitchButton from "../lib/bootstrap-switch-button-react";
+import BootstrapSwitchButton from "../../lib/bootstrap-switch-button-react";
 
 // App Container
 const AppMain: React.SFC<{ compiler: string; framework: string }> = props => {
