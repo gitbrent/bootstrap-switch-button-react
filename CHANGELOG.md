@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2019-04-03
 ### Added
 - New demo/api page (test folder) and a new height-test page
+- New project homepage/docs (`gh-pages`)
+- Added changelog
 ### Changed
 - Fixed issue with component height not matching bootstrap components
 - Added "keywords" and "bugs" to `package.json`
