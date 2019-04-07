@@ -7,6 +7,17 @@ Checkbox replacement using stylish bootstrap-4 switch button.
 Lightweight (14kb), self-contained, compiled as a single common js file for easy webpack integration.
 
 **************************************************************************************************
+
+#### Library Distributions
+Project                                                                                    |Description
+-------------------------------------------------------------------------------------------|-------------------------------------------------------
+[bootstrap4-toggle](https://github.com/gitbrent/bootstrap4-toggle)                         | Supports bootstrap4 (requires jQuery)
+[bootstrap-switch-button](https://github.com/gitbrent/bootstrap-switch-button)             | Supports bootstrap4+ (ES6 class, no dependencies)
+[bootstrap-switch-button-react](https://github.com/gitbrent/bootstrap-switch-button-react) | Supports bootstrap4+ (React component, no dependencies)
+
+# Demos
+**Demos and API Docs:** https://gitbrent.github.io/bootstrap-switch-button/  
+
 ```typescript
 <BootstrapSwitchButton
     checked={false}
@@ -20,16 +31,14 @@ Lightweight (14kb), self-contained, compiled as a single common js file for easy
 
 ![Demo GIF](https://github.com/gitbrent/bootstrap-switch-button-react/blob/master/img/demo.gif?raw=true)
 
-Live demos and API docs: https://gitbrent.github.io/bootstrap-switch-button-react/
-**************************************************************************************************
 
-## Installation
+# Installation
 ```bash
 npm i bootstrap-switch-button-react --save-dev
 ```
 
 
-## Usage
+# Usage
 Keep `state` in sync using the `onChange` function property
 
 ```typescript
@@ -49,7 +58,7 @@ import BootstrapSwitchButton from 'bootstrap-switch-button-react'
 ```
 
 
-## Properties
+# Properties
 Name       |Type        |Default   |Description                 |
 -----------|------------|----------|----------------------------|
 `onlabel`  |string/html |"On"      |Text of the on switch-button
@@ -60,3 +69,15 @@ Name       |Type        |Default   |Description                 |
 `style`    |string      |          |Appends the value to the class attribute of the switch-button. This can be used to apply custom styles. Refer to Custom Styles for reference.
 `width`    |integer     |     |Sets the width of the switch-button. if set to *null*, width will be auto-calculated.
 `height`   |integer     |     |Sets the height of the switch-button. if set to *null*, height will be auto-calculated.
+
+
+# Events
+Keep `state` in sync using the `onChange` function property
+
+```typescript
+<BootstrapSwitchButton
+    onChange={(checked: boolean) => {
+        this.setState({ isUserAdmin: checked })
+    }}
+/>
+```
