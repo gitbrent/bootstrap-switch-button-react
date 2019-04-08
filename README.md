@@ -19,11 +19,7 @@ Project                                                                         
 **Demos and API Docs:** https://gitbrent.github.io/bootstrap-switch-button/  
 
 ```typescript
-<BootstrapSwitchButton
-    onlabel='Admin User'
-    offlabel='Regular User'
-	checked={false}
-/>
+<BootstrapSwitchButton onlabel='Admin User' offlabel='Regular User' checked={false}/>
 ```
 
 ![Demo GIF](https://github.com/gitbrent/bootstrap-switch-button-react/blob/master/img/demo.gif?raw=true)
