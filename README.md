@@ -20,12 +20,9 @@ Project                                                                         
 
 ```typescript
 <BootstrapSwitchButton
-    checked={false}
     onlabel='Admin User'
     offlabel='Regular User'
-    onChange={(checked: boolean) => {
-        this.setState({ isUserAdmin: checked })
-    }}
+	checked={false}
 />
 ```
 
