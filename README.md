@@ -4,7 +4,7 @@
 
 Checkbox replacement using stylish bootstrap-4 switch button.
 
-Lightweight (14kb), self-contained, compiled as a single common js file for easy webpack integration.
+Lightweight (15kb), self-contained, compiled as a single CommonJS file for easy webpack integration.
 
 **************************************************************************************************
 
@@ -26,10 +26,14 @@ Project                                                                         
 
 
 # Installation
+NPM
 ```bash
 npm i bootstrap-switch-button-react --save-dev
 ```
-
+Yarn
+```bash
+yard add bootstrap-switch-button-react
+```
 
 # Usage
 Keep `state` in sync using the `onChange` function property
