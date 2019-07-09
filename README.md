@@ -16,7 +16,7 @@ Project                                                                         
 [bootstrap-switch-button-react](https://github.com/gitbrent/bootstrap-switch-button-react) | Supports bootstrap4+ (React component, no dependencies)
 
 # Demos
-**Demos and API Docs:** https://gitbrent.github.io/bootstrap-switch-button/  
+**Demos and API Docs:** https://gitbrent.github.io/bootstrap-switch-button-react/  
 
 ```typescript
 <BootstrapSwitchButton onlabel='Admin User' offlabel='Regular User' checked={false}/>
