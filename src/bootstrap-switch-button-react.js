@@ -110,32 +110,39 @@ export default class BootstrapSwitchButton extends React.Component {
         onClick={this.toggle}
       >
         <div className="switch-group">
-          <label
-            className={
-              "switch-on btn btn-" +
-              this.state.onstyle +
-              (this.state.size ? " btn-" + this.state.size : "")
-            }
-            style={labelStyle}
-          >
-            {this.state.onlabel}
-          </label>
-          <label
-            className={
-              "switch-off btn btn-" +
-              this.state.offstyle +
-              (this.state.size ? " btn-" + this.state.size : "")
-            }
-            style={labelStyle}
-          >
-            {this.state.offlabel}
-          </label>
-          <span
-            className={
-              "switch-handle btn btn-light" +
-              (this.state.size ? "btn-" + this.state.size : "")
-            }
-          />
+          { !this.props.children &&
+            <div>
+              <label
+                className={
+                  "switch-on btn btn-" +
+                  this.state.onstyle +
+                  (this.state.size ? " btn-" + this.state.size : "")
+                }
+                style={labelStyle}
+              >
+                {this.state.onlabel}
+              </label>
+              <label
+                className={
+                  "switch-off btn btn-" +
+                  this.state.offstyle +
+                  (this.state.size ? " btn-" + this.state.size : "")
+                }
+                style={labelStyle}
+              >
+                {this.state.offlabel}
+              </label>
+              <span
+                className={
+                  "switch-handle btn btn-light" +
+                  (this.state.size ? "btn-" + this.state.size : "")
+                }
+              />
+            </div>
+          }
+          <div style={{ left: this.state.checked ? '-25px': '25px', position: 'relative' }}>
+            {this.props.children}
+          </div>
         </div>
       </div>
     );
