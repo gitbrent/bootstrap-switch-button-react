@@ -46,7 +46,8 @@ export default class BootstrapSwitchButton extends React.Component {
       size: this.props.size || "",
       style: this.props.style || "",
       width: this.props.width || null,
-      height: this.props.height || null
+      height: this.props.height || null,
+      switchStyle: this.props.switchStyle || {}
     };
   }
 
@@ -88,7 +89,7 @@ export default class BootstrapSwitchButton extends React.Component {
   };
 
   render = () => {
-    let switchStyle = {};
+    let switchStyle = { ...this.state.switchStyle }
     this.state.width ? (switchStyle.width = this.state.width + "px") : null;
     this.state.height ? (switchStyle.height = this.state.height + "px") : null;
 
