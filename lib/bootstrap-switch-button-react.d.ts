@@ -33,8 +33,8 @@ interface BootstrapSwitchButtonProps {
   offstyle?: Colors | ColorsOutline;
   size?: "xs" | "sm" | "lg";
   style?: string;
-  width: number;
-  height: number;
+  width?: number;
+  height?: number;
 }
 
 declare class BootstrapSwitchButton extends React.Component<
