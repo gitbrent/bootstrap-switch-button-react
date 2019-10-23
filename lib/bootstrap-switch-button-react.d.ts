@@ -26,11 +26,15 @@ interface BootstrapSwitchButtonProps {
    */
   onChange?: (checked: boolean) => void;
   checked?: boolean;
+  disabled?: boolean;
   onlabel?: string;
   offlabel?: string;
-  offstyle?: Colors | ColorsOutline;
   onstyle?: Colors | ColorsOutline;
+  offstyle?: Colors | ColorsOutline;
+  size?: "xs" | "sm" | "lg";
   style?: string;
+  width: number;
+  height: number;
 }
 
 declare class BootstrapSwitchButton extends React.Component<
