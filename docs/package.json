@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-switch-button-react-test",
-  "version": "1.0.0-beta.11",
+  "version": "1.2.0",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -15,27 +15,27 @@
     "build": "webpack -p"
   },
   "dependencies": {
-    "@babel/core": "^7.4.0",
-    "@babel/preset-env": "^7.3.4",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
     "css-loader": "^2.1.1",
-    "react": "^16.7.0",
+    "react": "^16.11.0",
     "style-loader": "^0.23.1",
-    "webpack": "^4.12.0",
-    "webpack-dev-server": "^3.2.1"
+    "webpack": "^4.41.2",
+    "webpack-dev-server": "^3.9.0"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.4.0",
-    "@types/react": "^16.8.10",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@types/react": "^16.9.9",
     "babel-cli": "^6.26.0",
-    "babel-loader": "^8.0.5",
+    "babel-loader": "^8.0.6",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
-    "clean-webpack-plugin": "^2.0.1",
+    "clean-webpack-plugin": "^2.0.2",
     "html-webpack-plugin": "^3.2.0",
-    "react-dom": "^16.8.6",
-    "ts-loader": "^5.3.3",
-    "typescript": "^3.4.1",
-    "webpack-cli": "^3.3.0"
+    "react-dom": "^16.11.0",
+    "ts-loader": "^5.4.5",
+    "typescript": "^3.6.4",
+    "webpack-cli": "^3.3.9"
   }
 }
