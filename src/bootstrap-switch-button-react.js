@@ -103,7 +103,7 @@ export default class BootstrapSwitchButton extends React.Component {
         onClick={this.toggle}
       >
         <div className="switch-group">
-          <label
+          <span
             className={
               "switch-on btn btn-" +
               this.state.onstyle +
@@ -112,8 +112,8 @@ export default class BootstrapSwitchButton extends React.Component {
             style={labelStyle}
           >
             {this.state.onlabel}
-          </label>
-          <label
+          </span>
+          <span
             className={
               "switch-off btn btn-" +
               this.state.offstyle +
@@ -122,7 +122,7 @@ export default class BootstrapSwitchButton extends React.Component {
             style={labelStyle}
           >
             {this.state.offlabel}
-          </label>
+          </span>
           <span
             className={
               "switch-handle btn btn-light" +
