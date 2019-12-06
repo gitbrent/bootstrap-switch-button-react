@@ -34,11 +34,6 @@
 	border-radius: .2rem;
 }
 
-.checkbox label .switch, .checkbox-inline .switch {
-	margin-left: -1.25rem;
-	margin-right: .35rem;
-}
-
 .switch {
 	position: relative;
 	overflow: hidden;
