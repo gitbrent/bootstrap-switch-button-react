@@ -28,7 +28,7 @@ Project                                                                         
 # Installation
 NPM
 ```bash
-npm i bootstrap-switch-button-react --save-dev
+npm i bootstrap-switch-button-react --save
 ```
 Yarn
 ```bash

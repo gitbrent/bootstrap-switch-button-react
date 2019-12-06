@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.2.0] - 2019-12-05
 ### Added
+- Added `componentDidUpdate` to fix update on props change [\#6](https://github.com/gitbrent/bootstrap-switch-button-react/pull/6) ([GustavoDinizMonteiro](https://github.com/GustavoDinizMonteiro))
 - Added missing methods to typescript defs [\#11](https://github.com/gitbrent/bootstrap-switch-button-react/issue/11) ([evark](https://github.com/evark))
 ### Changed
 - Replaced inner `label` tags with `span` for accessibility
