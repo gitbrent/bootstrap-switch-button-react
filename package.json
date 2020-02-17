@@ -12,11 +12,11 @@
     "type": "git",
     "url": "https://github.com/gitbrent/bootstrap-switch-button-react.git"
   },
-  "main": "./lib/bootstrap-switch-button-react.js",
+  "main": "lib/bootstrap-switch-button-react.js",
+  "types": "lib/bootstrap-switch-button-react.d.ts",
   "files": [
-    "lib"
+    "lib/"
   ],
-  "types": "lib",
   "scripts": {
     "start": "webpack --watch",
     "build": "webpack -p"
