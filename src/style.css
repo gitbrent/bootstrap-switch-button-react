@@ -27,7 +27,13 @@
 |*|  SOFTWARE.
 \*/
 
-.btn-group-xs > .btn, .btn-xs {
+/* include the switch.btn itself */
+.btn-group-xs > switch.btn,
+switch.btn-xs,
+/* include .btn elements inside the switch */
+.btn-group-xs > switch .btn,
+switch .btn-xs
+{
 	padding: .35rem .4rem .25rem .4rem;
 	font-size: .875rem;
 	line-height: .5;
