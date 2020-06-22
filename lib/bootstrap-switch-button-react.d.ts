@@ -20,6 +20,11 @@ export type ColorsOutline =
   | "outline-light"
   | "outline-dark";
 
+interface styleType {
+  switch?: React.CSSProperties,
+  label?: React.CSSProperties
+}
+
 interface BootstrapSwitchButtonProps {
   /**
    * Function to call when the SwitchButton is changed
@@ -32,7 +37,8 @@ interface BootstrapSwitchButtonProps {
   onstyle?: Colors | ColorsOutline;
   offstyle?: Colors | ColorsOutline;
   size?: "xs" | "sm" | "lg";
-  style?: string;
+  style?: styleType;
+  className?: string;
   width?: number;
   height?: number;
 }
