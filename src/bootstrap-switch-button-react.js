@@ -42,7 +42,8 @@ export default class BootstrapSwitchButton extends React.Component {
 			onstyle: this.props.onstyle || 'primary',
 			offstyle: this.props.offstyle || 'light',
 			size: this.props.size || '',
-			style: this.props.style || '',
+			style: this.props.style || {},
+			className: this.props.className || '',
 			width: this.props.width || null,
 			height: this.props.height || null,
 		};
@@ -86,11 +87,12 @@ export default class BootstrapSwitchButton extends React.Component {
 	};
 
 	render = () => {
-		let switchStyle = {};
+		const styles = this.props.style === undefined ? {} : this.props.style;
+		let switchStyle = styles.switch === undefined ? {} : styles.switch;
 		this.state.width ? (switchStyle.width = this.state.width + 'px') : null;
 		this.state.height ? (switchStyle.height = this.state.height + 'px') : null;
 
-		let labelStyle = {};
+		let labelStyle = styles.label === undefined ? {} : styles.label;
 		if (this.state.height) labelStyle.lineHeight = 'calc(' + this.state.height + 'px * 0.8)';
 
 		return (
@@ -99,7 +101,7 @@ export default class BootstrapSwitchButton extends React.Component {
 					'switch btn ' +
 					(this.state.checked ? 'on btn-' + this.state.onstyle : 'off btn-' + this.state.offstyle) +
 					(this.state.size ? ' btn-' + this.state.size : '') +
-					(this.state.style ? ' ' + this.state.style : '')
+					(this.state.className ? ' ' + this.state.className : '')
 				}
 				style={switchStyle}
 				onClick={this.toggle}
