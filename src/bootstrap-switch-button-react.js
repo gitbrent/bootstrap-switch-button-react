@@ -111,7 +111,7 @@ export default class BootstrapSwitchButton extends React.Component {
 					<span className={'switch-off btn btn-' + this.state.offstyle + (this.state.size ? ' btn-' + this.state.size : '')} style={labelStyle}>
 						{this.state.offlabel}
 					</span>
-					<span className={'switch-handle btn btn-light' + (this.state.size ? 'btn-' + this.state.size : '')} />
+					<span className={'switch-handle btn btn-light ' + (this.state.size ? 'btn-' + this.state.size : '')} />
 				</div>
 			</div>
 		);
